@@ -1,31 +1,38 @@
 import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Moonlight Live 2026</h1>
-      <h2>Featuring: Your Favorite Artist</h2>
+    <div className="app">
+      <h1>Someone's live</h1>
+      <h2>Featuring someone</h2>
 
-      <p>Date: April 20, 2026</p>
-      <p>Location: Madison, WI</p>
+      <p><strong>Date:</strong> something</p>
+      <p><strong>Time:</strong> 7:00 PM</p>
+      <p><strong>Location:</strong> something</p>
 
-      <button onClick={() => alert("Ticket purchase coming soon!")}>
-        Buy Tickets
-      </button>
+      <div className="button-group">
+        <button onClick={() => alert("Ticket purchase coming soon!")}>
+          Buy Tickets
+        </button>
 
-      <br /><br />
-
-      <button onClick={() => setShowInfo(!showInfo)}>
-        More Info
-      </button>
+        <button onClick={() => setShowInfo(!showInfo)}>
+          {showInfo ? "Hide Info" : "More Info"}
+        </button>
+      </div>
 
       {showInfo && (
-        <div>
-          <h3>About the Artist</h3>
+        <div className="info-box">
+          <h3>About the Singer</h3>
           <p>
-            This artist is known for amazing live performances and hit songs.
+            TBA
+          </p>
+
+          <h3>Concert Details</h3>
+          <p>
+            TBA
           </p>
         </div>
       )}
