@@ -1,31 +1,40 @@
 import { useState } from "react";
+import "./App.css";
 
 function App() {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div className="app">
       <h1>Moonlight Live 2026</h1>
-      <h2>Featuring: Your Favorite Artist</h2>
+      <h2>Featuring Aurora Vale</h2>
 
-      <p>Date: April 20, 2026</p>
-      <p>Location: Madison, WI</p>
+      <p><strong>Date:</strong> April 20, 2026</p>
+      <p><strong>Time:</strong> 7:00 PM</p>
+      <p><strong>Location:</strong> Madison Square Theater</p>
 
-      <button onClick={() => alert("Ticket purchase coming soon!")}>
-        Buy Tickets
-      </button>
+      <div className="button-group">
+        <button onClick={() => alert("Ticket purchase coming soon!")}>
+          Buy Tickets
+        </button>
 
-      <br /><br />
-
-      <button onClick={() => setShowInfo(!showInfo)}>
-        More Info
-      </button>
+        <button onClick={() => setShowInfo(!showInfo)}>
+          {showInfo ? "Hide Info" : "More Info"}
+        </button>
+      </div>
 
       {showInfo && (
-        <div>
-          <h3>About the Artist</h3>
+        <div className="info-box">
+          <h3>About the Singer</h3>
           <p>
-            This artist is known for amazing live performances and hit songs.
+            Aurora Vale is a pop artist known for energetic performances,
+            emotional vocals, and visually stunning live shows.
+          </p>
+
+          <h3>Concert Details</h3>
+          <p>
+            Join us for a night of music, stage effects, and fan-favorite songs.
+            Doors open at 6:00 PM and the main performance begins at 7:00 PM.
           </p>
         </div>
       )}
