@@ -1,0 +1,66 @@
+.site-navbar {
+  background: rgba(8, 10, 15, 0.85) !important;
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+  transition: background 0.3s ease;
+}
+
+.brand {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  color: var(--gold) !important;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.brand-icon {
+  margin-right: 6px;
+  opacity: 0.8;
+}
+
+.nav-item-link {
+  color: var(--muted) !important;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 8px 16px !important;
+  border-radius: 6px;
+  transition: color 0.2s, background 0.2s;
+  text-decoration: none;
+}
+
+.nav-item-link:hover,
+.nav-item-link.active {
+  color: var(--text) !important;
+  background: rgba(255,255,255,0.06);
+}
+
+.nav-cta {
+  background: linear-gradient(135deg, var(--gold), #a0752e) !important;
+  color: var(--bg-deep) !important;
+  font-weight: 500 !important;
+  margin-left: 8px;
+}
+
+.nav-cta:hover {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold)) !important;
+  color: var(--bg-deep) !important;
+}
+
+.nav-cta.active {
+  background: linear-gradient(135deg, var(--gold-light), var(--gold)) !important;
+  color: var(--bg-deep) !important;
+}
+
+.nav-toggle {
+  border: 1px solid var(--border) !important;
+  filter: invert(1);
+}
+
+/* Override Bootstrap collapse on mobile */
+@media (max-width: 767px) {
+  .nav-item-link { margin: 4px 0; }
+  .nav-cta { margin-left: 0 !important; }
+}

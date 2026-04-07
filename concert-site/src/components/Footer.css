@@ -1,0 +1,52 @@
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 48px 20px 32px;
+  margin-top: auto;
+  background: rgba(0,0,0,0.3);
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.footer-brand p {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--gold); }
+
+.footer-copy {
+  color: rgba(138,130,120,0.4);
+  font-size: 0.75rem;
+  margin: 0;
+}

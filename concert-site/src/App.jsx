@@ -1,42 +1,25 @@
-import { useState } from "react";
-import "./App.css";
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Artist from './pages/Artist';
+import Tickets from './pages/Tickets';
 
 function App() {
-  const [showInfo, setShowInfo] = useState(false);
-
   return (
-    <div className="app">
-      <h1>Someone's live</h1>
-      <h2>Featuring someone</h2>
-
-      <p><strong>Date:</strong> something</p>
-      <p><strong>Time:</strong> 7:00 PM</p>
-      <p><strong>Location:</strong> something</p>
-
-      <div className="button-group">
-        <button onClick={() => alert("Ticket purchase coming soon!")}>
-          Buy Tickets
-        </button>
-
-        <button onClick={() => setShowInfo(!showInfo)}>
-          {showInfo ? "Hide Info" : "More Info"}
-        </button>
+    <HashRouter>
+      <NavBar />
+      <div style={{ paddingTop: '70px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/artist" element={<Artist />} />
+          <Route path="/tickets" element={<Tickets />} />
+        </Routes>
+        <Footer />
       </div>
-
-      {showInfo && (
-        <div className="info-box">
-          <h3>About the Singer</h3>
-          <p>
-            TBA
-          </p>
-
-          <h3>Concert Details</h3>
-          <p>
-            TBA
-          </p>
-        </div>
-      )}
-    </div>
+    </HashRouter>
   );
 }
 
