@@ -30,7 +30,7 @@
 .schedule-time {
   font-family: sans-serif;
   font-size: 1.05rem;
-  color: var(--gold);
+  color: #000;
   min-width: 80px;
   font-weight: 600;
 }

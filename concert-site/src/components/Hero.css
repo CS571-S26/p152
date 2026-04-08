@@ -83,8 +83,8 @@
 .btn-primary-gold {
   display: inline-block;
   padding: 14px 36px;
-  background: linear-gradient(135deg, var(--gold), #a0752e);
-  color: var(--text) !important;
+  background: #0057ff;
+  color: #fff !important;
   font-family: sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
@@ -93,12 +93,12 @@
   border-radius: 50px;
   text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 0 30px rgba(201,168,76,0.25);
+  box-shadow: 0 0 30px rgba(0,87,255,0.25);
 }
 
 .btn-primary-gold:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 48px rgba(201,168,76,0.4);
+  box-shadow: 0 0 48px rgba(0,87,255,0.4);
 }
 
 .btn-ghost {

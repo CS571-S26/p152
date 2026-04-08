@@ -3,11 +3,11 @@ import Hero from '../components/Hero';
 import './Home.css';
 
 const schedule = [
-  { time: '6:00 PM', act: 'Doors Open',   detail: 'Gates open for all ticket holders' },
-  { time: '7:00 PM', act: 'Opening Act',  detail: 'Special guest performance' },
-  { time: '8:00 PM', act: 'Miku',          detail: 'Headlining performance begins' },
-  { time: '10:30 PM', act: 'Encore',      detail: 'Extended encore set' },
-  { time: '11:00 PM', act: 'Show End',    detail: 'Venue closes at midnight' },
+  { time: '6:00 PM', act: 'Doors Open' },
+  { time: '7:00 PM', act: 'Opening Act' },
+  { time: '8:00 PM', act: 'Performance Start' },
+  { time: '10:30 PM', act: 'Encore' },
+  { time: '11:00 PM', act: 'Show End' },
 ];
 
 const faqs = [
@@ -40,7 +40,6 @@ export default function Home() {
                 <div className="schedule-divider" />
                 <div className="schedule-info">
                   <strong>{item.act}</strong>
-                  <span>{item.detail}</span>
                 </div>
               </div>
             ))}
