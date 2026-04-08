@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="hero-ring hero-ring--3" />
       <div className="hero-content">
         <h1 className="hero-title">
-          Miku
+          Hatsune Miku
         </h1>
         <div className="hero-meta">
           <span>August 15, 2026</span>

@@ -18,7 +18,7 @@ export default function Artist() {
           <p style={{ fontSize: '0.78rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '20px' }}>
             Headlining Artist
           </p>
-          <h1 className="artist-name">Miku</h1>
+          <h1 className="artist-name">Hatsune Miku</h1>
         </div>
       </header>
 
@@ -26,10 +26,14 @@ export default function Artist() {
         <div className="artist-section__inner">
           <div className="artist-bio-grid">
             <div className="artist-avatar">
-              <div className="avatar-placeholder">M</div>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/ca/SvgMiku3.svg"
+                alt="Hatsune Miku"
+                className="avatar-placeholder"
+              />
             </div>
             <div className="artist-bio-text">
-              <h2>About Miku</h2>
+              <h2>About Hatsune Miku</h2>
               <p>
                 Hatsune Miku (初音ミク) is a Vocaloid software voicebank developed by Crypton Future
                 Media and its official anthropomorphic mascot — a 16-year-old girl with long,
@@ -68,7 +72,7 @@ export default function Artist() {
       </section>
 
       <div className="artist-cta">
-        <h2>See Miku Live</h2>
+        <h2>See Hatsune Miku Live</h2>
         <p>August 15, 2026 · Madison Square Garden, New York</p>
         <Link to="/tickets" className="btn-primary-gold">Get Tickets</Link>
       </div>

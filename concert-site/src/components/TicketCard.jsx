@@ -1,20 +1,10 @@
 import './TicketCard.css';
 
-export default function TicketCard({ tier, price, perks, badge, featured, selected, onSelect }) {
+export default function TicketCard({ tier, price, perks, count, onAdd, onRemove }) {
   return (
-    <div
-      className={
-        'ticket-card' +
-        (featured ? ' ticket-card--featured' : '') +
-        (selected ? ' ticket-card--selected' : '')
-      }
-      onClick={onSelect}
-    >
-      {badge && <div className="ticket-badge">{badge}</div>}
+    <div className="ticket-card">
       <div className="ticket-tier">{tier}</div>
-      <div className="ticket-price">
-        <span className="ticket-dollar">$</span>{price}
-      </div>
+      <div className="ticket-price">${price}</div>
       <ul className="ticket-perks">
         {perks.map(perk => (
           <li key={perk}>
@@ -22,9 +12,11 @@ export default function TicketCard({ tier, price, perks, badge, featured, select
           </li>
         ))}
       </ul>
-      <button className={'ticket-btn' + (selected ? ' ticket-btn--selected' : '')}>
-        {selected ? 'Selected ✓' : 'Select'}
-      </button>
+      <div className="ticket-qty">
+        <button className="qty-btn" onClick={onRemove}>−</button>
+        <span className="qty-count">{count}</span>
+        <button className="qty-btn" onClick={onAdd}>+</button>
+      </div>
     </div>
   );
 }
