@@ -136,7 +136,7 @@
 .btn-reset {
   background: transparent;
   border: 1px solid var(--border);
-  color: var(--muted);
+  color: #000000;
   font-family: sans-serif;
   font-size: 0.82rem;
   letter-spacing: 0.1em;
