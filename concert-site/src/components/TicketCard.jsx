@@ -1,5 +1,4 @@
 import './TicketCard.css';
-
 export default function TicketCard({ tier, price, perks, count, onAdd, onRemove }) {
   return (
     <div className="ticket-card">

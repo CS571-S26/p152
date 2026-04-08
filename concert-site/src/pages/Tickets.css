@@ -2,8 +2,7 @@
   min-height: 100vh;
   padding-bottom: 80px;
 }
-
-/* Page header */
+/* page header */
 .tickets-header {
   padding: 90px 20px 50px;
   text-align: center;
@@ -11,22 +10,19 @@
   border-bottom: 1px solid var(--border);
   margin-bottom: 60px;
 }
-
-/* Tier cards wrapper */
+/* tier cards */
 .tickets-tiers {
   max-width: 1060px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
-/* Proceed button */
+/* proceed button */
 .proceed-wrap {
   display: flex;
   justify-content: center;
   margin-top: 48px;
   padding: 0 20px;
 }
-
 .submit-btn {
   width: 100%;
   padding: 16px;
@@ -43,13 +39,11 @@
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 0 28px rgba(201,168,76,0.2);
 }
-
 .submit-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 44px rgba(201,168,76,0.35);
 }
-
-/* ── Confirmation screen ── */
+/* confirmation screen */
 .confirm-box {
   max-width: 520px;
   margin: 100px auto;
@@ -59,7 +53,6 @@
   border-radius: 20px;
   text-align: center;
 }
-
 .confirm-icon {
   width: 64px;
   height: 64px;
@@ -74,14 +67,12 @@
   margin: 0 auto 24px;
   box-shadow: 0 0 40px rgba(201,168,76,0.3);
 }
-
 .confirm-box h2 {
   font-size: 2.8rem;
   font-weight: 300;
   margin-bottom: 4px;
   color: black;
 }
-
 .confirm-sub {
   font-size: 0.78rem;
   letter-spacing: 0.18em;
@@ -89,7 +80,6 @@
   color: black;
   margin-bottom: 32px;
 }
-
 .confirm-details {
   display: flex;
   flex-direction: column;
@@ -100,7 +90,6 @@
   margin-bottom: 24px;
   text-align: left;
 }
-
 .confirm-row {
   display: flex;
   justify-content: space-between;
@@ -109,15 +98,12 @@
   border-bottom: 1px solid rgba(255,255,255,0.04);
   font-size: 0.88rem;
 }
-
 .confirm-row span { color: black; }
 .confirm-row strong { color: black; font-weight: 400; }
-
 .confirm-row--total {
   background: rgba(201,168,76,0.06);
   border-bottom: none;
 }
-
 .confirm-row--total span  { color: black; font-weight: 500; }
 .confirm-row--total strong {
   font-family: sans-serif;
@@ -125,14 +111,12 @@
   font-weight: 700;
   color: black;
 }
-
 .confirm-note {
   color: black;
   font-size: 0.85rem;
   line-height: 1.7;
   margin-bottom: 28px;
 }
-
 .btn-reset {
   background: transparent;
   border: 1px solid var(--border);
@@ -146,7 +130,6 @@
   cursor: pointer;
   transition: border-color 0.2s, color 0.2s;
 }
-
 .btn-reset:hover {
   border-color: var(--gold);
   color: var(--gold);

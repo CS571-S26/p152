@@ -7,11 +7,9 @@
   overflow: hidden;
   padding: 80px 20px;
   text-align: center;
-
   background: var(--bg-deep);
 }
-
-/* Decorative concentric rings */
+/* spinning rings in the background */
 .hero-ring {
   position: absolute;
   border-radius: 50%;
@@ -23,13 +21,10 @@
 .hero-ring--1 { width: 420px; height: 420px; }
 .hero-ring--2 { width: 680px; height: 680px; animation: spin 60s linear infinite; }
 .hero-ring--3 { width: 960px; height: 960px; animation: spin 90s linear infinite reverse; }
-
 @keyframes spin {
   to { transform: translate(-50%, -50%) rotate(360deg); }
 }
-
 .hero-content { position: relative; z-index: 2; max-width: 680px; }
-
 .hero-eyebrow {
   font-size: 0.78rem;
   letter-spacing: 0.22em;
@@ -37,7 +32,6 @@
   color: var(--gold);
   margin-bottom: 20px;
 }
-
 .hero-title {
   font-size: clamp(3.5rem, 10vw, 7rem);
   line-height: 1.0;
@@ -45,21 +39,17 @@
   color: var(--text);
   margin-bottom: 16px;
 }
-
 .hero-title--accent {
   font-weight: 700;
   color: var(--text);
 }
-
 .hero-artist {
   font-size: 1.15rem;
   color: var(--muted);
   margin-bottom: 20px;
   letter-spacing: 0.05em;
 }
-
 .hero-artist strong { color: var(--text); font-weight: 500; }
-
 .hero-meta {
   display: flex;
   flex-wrap: wrap;
@@ -69,9 +59,7 @@
   color: var(--muted);
   margin-bottom: 36px;
 }
-
 .dot { opacity: 0.35; }
-
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -79,7 +67,6 @@
   justify-content: center;
   margin-top: 10px;
 }
-
 .btn-primary-gold {
   display: inline-block;
   padding: 14px 36px;
@@ -95,12 +82,10 @@
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 0 30px rgba(0,87,255,0.25);
 }
-
 .btn-primary-gold:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 48px rgba(0,87,255,0.4);
 }
-
 .btn-ghost {
   display: inline-block;
   padding: 14px 28px;
@@ -111,12 +96,10 @@
   text-decoration: none;
   transition: border-color 0.2s, color 0.2s;
 }
-
 .btn-ghost:hover {
   border-color: var(--gold);
   color: var(--gold) !important;
 }
-
 @media (max-width: 480px) {
   .hero-ring--2, .hero-ring--3 { display: none; }
 }

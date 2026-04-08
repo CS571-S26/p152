@@ -4,7 +4,6 @@
   margin-top: auto;
   background: rgba(0,0,0,0.3);
 }
-
 .footer-inner {
   max-width: 900px;
   margin: 0 auto;
@@ -14,7 +13,6 @@
   gap: 20px;
   align-items: center;
 }
-
 .footer-logo {
   font-family: sans-serif;
   font-size: 1.5rem;
@@ -23,17 +21,14 @@
   display: block;
   margin-bottom: 6px;
 }
-
 .footer-brand p {
   color: var(--muted);
   font-size: 0.85rem;
 }
-
 .footer-links {
   display: flex;
   gap: 28px;
 }
-
 .footer-links a {
   color: var(--muted);
   text-decoration: none;
@@ -42,9 +37,7 @@
   text-transform: uppercase;
   transition: color 0.2s;
 }
-
 .footer-links a:hover { color: var(--gold); }
-
 .footer-copy {
   color: rgba(138,130,120,0.4);
   font-size: 0.75rem;

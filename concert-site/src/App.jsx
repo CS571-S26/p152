@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Artist from './pages/Artist';
 import Tickets from './pages/Tickets';
-
 function App() {
   return (
     <HashRouter>
@@ -22,5 +21,4 @@ function App() {
     </HashRouter>
   );
 }
-
 export default App;

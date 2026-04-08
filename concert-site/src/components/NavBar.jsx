@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import './NavBar.css';
-
 export default function NavBar() {
   return (
     <Navbar expand="md" className="site-navbar" fixed="top">

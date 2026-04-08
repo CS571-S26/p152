@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import CountdownTimer from './CountdownTimer';
 import './Hero.css';
-
 const CONCERT_DATE = new Date('2026-08-15T20:00:00');
-
 export default function Hero() {
   return (
     <section className="hero">

@@ -1,6 +1,5 @@
 import { useState, useEffect, Fragment } from 'react';
 import './CountdownTimer.css';
-
 function getTimeLeft(target) {
   const diff = target - Date.now();
   if (diff <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
@@ -11,22 +10,18 @@ function getTimeLeft(target) {
     seconds: Math.floor((diff % 60000) / 1000),
   };
 }
-
 export default function CountdownTimer({ targetDate }) {
   const [time, setTime] = useState(() => getTimeLeft(targetDate));
-
   useEffect(() => {
     const id = setInterval(() => setTime(getTimeLeft(targetDate)), 1000);
     return () => clearInterval(id);
   }, [targetDate]);
-
   const units = [
     { value: time.days,    label: 'Days' },
     { value: time.hours,   label: 'Hours' },
     { value: time.minutes, label: 'Min' },
     { value: time.seconds, label: 'Sec' },
   ];
-
   return (
     <div className="countdown">
       {units.map((u, i) => (

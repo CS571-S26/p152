@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import './Home.css';
-
 const schedule = [
   { time: '6:00 PM', act: 'Doors Open' },
   { time: '7:00 PM', act: 'Opening Act' },
@@ -9,7 +8,6 @@ const schedule = [
   { time: '10:30 PM', act: 'Encore' },
   { time: '11:00 PM', act: 'Show End' },
 ];
-
 const faqs = [
   { q: 'What is the bag policy?',
     a: 'Clear bags only, no larger than 12" × 6" × 12". Small clutches under 5" × 9" are permitted.' },
@@ -24,12 +22,10 @@ const faqs = [
   { q: 'What if the event is cancelled?',
     a: 'All ticket holders will be contacted via email and issued a full refund within 5–7 business days.' },
 ];
-
 export default function Home() {
   return (
     <main>
       <Hero />
-
       <section className="home-section">
         <div className="home-section__inner">
           <h2>Event Schedule</h2>
@@ -46,7 +42,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="home-section home-section--dark">
         <div className="home-section__inner">
           <h2>Frequently Asked Questions</h2>
@@ -60,7 +55,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="cta-band">
         <p className="cta-eyebrow">Limited Availability</p>
         <h2>Don't Miss Your Chance</h2>

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './Artist.css';
-
 const songs = [
   { title: 'World is Mine',      album: 'ryo/supercell (2008)',   streams: '210M' },
   { title: 'Senbonzakura',       album: 'Kurousa-P (2011)',       streams: '195M' },
@@ -9,7 +8,6 @@ const songs = [
   { title: 'Rolling Girl',       album: 'wowaka (2010)',          streams: '130M' },
   { title: 'Sand Planet',        album: 'Hachi (2017)',           streams: '118M' },
 ];
-
 export default function Artist() {
   return (
     <div>
@@ -21,7 +19,6 @@ export default function Artist() {
           <h1 className="artist-name">Hatsune Miku</h1>
         </div>
       </header>
-
       <section className="artist-section">
         <div className="artist-section__inner">
           <div className="artist-bio-grid">
@@ -52,7 +49,6 @@ export default function Artist() {
           </div>
         </div>
       </section>
-
       <section className="artist-section artist-section--alt">
         <div className="artist-section__inner">
           <h2>Top Songs</h2>
@@ -70,7 +66,6 @@ export default function Artist() {
           </div>
         </div>
       </section>
-
       <div className="artist-cta">
         <h2>See Hatsune Miku Live</h2>
         <p>August 15, 2026 · Madison Square Garden, New York</p>

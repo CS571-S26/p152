@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import TicketCard from '../components/TicketCard';
 import './Tickets.css';
-
 const TIERS = [
   {
     id: 'normal',
@@ -28,27 +27,21 @@ const TIERS = [
     ],
   },
 ];
-
 export default function Tickets() {
   const [quantities, setQuantities] = useState({ normal: 0, vip: 0 });
   const [confirmed, setConfirmed] = useState(false);
-
   const totalTickets = TIERS.reduce((sum, t) => sum + quantities[t.id], 0);
   const total = TIERS.reduce((sum, t) => sum + t.price * quantities[t.id], 0);
-
   function add(id) {
     setQuantities(q => ({ ...q, [id]: q[id] + 1 }));
   }
-
   function remove(id) {
     setQuantities(q => ({ ...q, [id]: Math.max(0, q[id] - 1) }));
   }
-
   function handleReset() {
     setConfirmed(false);
     setQuantities({ normal: 0, vip: 0 });
   }
-
   if (confirmed) {
     return (
       <div className="tickets-page">
@@ -71,7 +64,6 @@ export default function Tickets() {
       </div>
     );
   }
-
   return (
     <div className="tickets-page">
       <header className="tickets-header">
@@ -80,7 +72,6 @@ export default function Tickets() {
           August 15, 2026 · Madison Square Garden, New York
         </p>
       </header>
-
       <div className="tickets-tiers">
         <Row className="g-4 justify-content-center">
           {TIERS.map(t => (
@@ -95,7 +86,6 @@ export default function Tickets() {
           ))}
         </Row>
       </div>
-
       {totalTickets > 0 && (
         <div className="proceed-wrap">
           <button className="submit-btn" onClick={() => setConfirmed(true)}>

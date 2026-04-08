@@ -9,11 +9,8 @@
   --rose:      #f0ece4;
   --radius:    12px;
 }
-
 *, *::before, *::after { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
-
 body {
   margin: 0;
   background: var(--bg-deep);
@@ -22,21 +19,16 @@ body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
-
 #root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
-
 h1, h2, h3 {
   font-family: sans-serif;
   color: var(--text);
   margin: 0 0 16px;
 }
-
 p { margin: 0 0 12px; }
-
 ul { padding: 0; margin: 0; }
-
 a { color: inherit; }
