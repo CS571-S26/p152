@@ -53,7 +53,6 @@ export default function Tickets() {
     return (
       <div className="tickets-page">
         <div className="confirm-box">
-          <div className="confirm-icon">✓</div>
           <h2>Order Summary</h2>
           <div className="confirm-details">
             {TIERS.filter(t => quantities[t.id] > 0).map(t => (
