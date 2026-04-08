@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import './Artist.css';
 
 const songs = [
-  { title: 'Midnight Signal',  album: 'Echoes (2024)',       streams: '1.2B' },
-  { title: 'Glass & Gold',     album: 'Neon Psalms (2022)',  streams: '987M' },
-  { title: 'Softer Now',       album: 'Echoes (2024)',       streams: '834M' },
-  { title: 'Burn Season',      album: 'Neon Psalms (2022)',  streams: '712M' },
-  { title: 'Ultraviolet',      album: 'Debut (2020)',        streams: '601M' },
-  { title: 'The Last Light',   album: 'Echoes (2024)',       streams: '520M' },
+  { title: 'World is Mine',      album: 'ryo/supercell (2008)',   streams: '210M' },
+  { title: 'Senbonzakura',       album: 'Kurousa-P (2011)',       streams: '195M' },
+  { title: 'Melt',               album: 'ryo/supercell (2007)',   streams: '170M' },
+  { title: 'Tell Your World',    album: 'kz(livetune) (2012)',    streams: '155M' },
+  { title: 'Rolling Girl',       album: 'wowaka (2010)',          streams: '130M' },
+  { title: 'Sand Planet',        album: 'Hachi (2017)',           streams: '118M' },
 ];
 
 export default function Artist() {
@@ -19,7 +19,6 @@ export default function Artist() {
             Headlining Artist
           </p>
           <h1 className="artist-name">Miku</h1>
-          <p className="artist-tagline">"Music is the only language that needs no translation."</p>
         </div>
       </header>
 
@@ -32,22 +31,19 @@ export default function Artist() {
             <div className="artist-bio-text">
               <h2>About Miku</h2>
               <p>
-                Miku is a multi-platinum recording artist known for blending cinematic pop with
-                introspective lyricism. Born in Portland, Oregon, she began writing songs at age 14
-                and released her debut EP independently before signing with Atlantic Records in 2019.
+                Hatsune Miku (初音ミク) is a Vocaloid software voicebank developed by Crypton Future
+                Media and its official anthropomorphic mascot — a 16-year-old girl with long,
+                turquoise twin-tails. She was originally released in August 2007 for the Yamaha
+                Vocaloid 2 synthesizer engine and was the first member of the Character Vocal Series,
+                voiced by Japanese voice actress Saki Fujita.
               </p>
               <p>
-                Her 2022 album <em>Neon Psalms</em> debuted at #2 on the Billboard 200 and earned
-                three Grammy nominations, including Album of the Year. Her most recent release,{' '}
-                <em>Echoes</em>, broke streaming records in its first week and solidified her status
-                as one of the defining voices of her generation.
+                Since her debut, Miku has grown into a global cultural phenomenon, headlining sold-out
+                holographic concerts across Japan, North America, and Europe. Thousands of
+                user-generated songs have been created using her voice, making her one of the most
+                prolific and collaborative musical acts in history, with a fanbase spanning every
+                continent.
               </p>
-              <div className="artist-stats">
-                <div className="stat"><span>4.2B</span><small>Streams</small></div>
-                <div className="stat"><span>3</span><small>Studio Albums</small></div>
-                <div className="stat"><span>12M+</span><small>Monthly Listeners</small></div>
-                <div className="stat"><span>3×</span><small>Grammy Nominated</small></div>
-              </div>
             </div>
           </div>
         </div>

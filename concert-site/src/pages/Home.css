@@ -49,7 +49,7 @@
 }
 
 .schedule-info strong {
-  color: var(--text);
+  color: #000;
   font-weight: 500;
   font-size: 1.05rem;
 }
@@ -76,13 +76,13 @@
 
 .faq-q {
   font-weight: 500;
-  color: var(--text);
+  color: #000;
   margin-bottom: 10px;
   font-size: 0.95rem;
 }
 
 .faq-a {
-  color: var(--muted);
+  color: #000;
   font-size: 0.88rem;
   line-height: 1.65;
   margin: 0;

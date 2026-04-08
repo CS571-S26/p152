@@ -61,7 +61,7 @@
 }
 
 .artist-bio-text p {
-  color: var(--muted);
+  color: #000;
   font-size: 0.95rem;
   line-height: 1.8;
 }
@@ -117,11 +117,11 @@
 }
 
 .song-info { flex: 1; display: flex; flex-direction: column; gap: 2px; }
-.song-info strong { color: var(--text); font-weight: 400; font-size: 1rem; }
-.song-info span { color: var(--muted); font-size: 0.8rem; }
+.song-info strong { color: #000; font-weight: 400; font-size: 1rem; }
+.song-info span { color: #000; font-size: 0.8rem; }
 
 .song-streams {
-  color: var(--muted);
+  color: #000;
   font-size: 0.82rem;
   letter-spacing: 0.05em;
 }
@@ -134,7 +134,7 @@
 }
 
 .artist-cta p {
-  color: var(--muted);
+  color: #000;
   margin-bottom: 24px;
   font-style: italic;
 }
