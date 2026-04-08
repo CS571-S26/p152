@@ -11,13 +11,9 @@ export default function Hero() {
       <div className="hero-ring hero-ring--2" />
       <div className="hero-ring hero-ring--3" />
       <div className="hero-content">
-        <p className="hero-eyebrow">One Night Only</p>
         <h1 className="hero-title">
-          Luna <span className="hero-title--accent">Voss</span>
+          Miku
         </h1>
-        <p className="hero-artist">
-          <strong>Echoes of the Night</strong> World Tour
-        </p>
         <div className="hero-meta">
           <span>August 15, 2026</span>
           <span className="dot">·</span>

@@ -7,7 +7,7 @@
 }
 
 .brand {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family: sans-serif !important;
   font-size: 1.4rem !important;
   font-weight: 600 !important;
   color: var(--gold) !important;
@@ -39,19 +39,19 @@
 
 .nav-cta {
   background: linear-gradient(135deg, var(--gold), #a0752e) !important;
-  color: var(--bg-deep) !important;
+  color: var(--text) !important;
   font-weight: 500 !important;
   margin-left: 8px;
 }
 
 .nav-cta:hover {
   background: linear-gradient(135deg, var(--gold-light), var(--gold)) !important;
-  color: var(--bg-deep) !important;
+  color: var(--text) !important;
 }
 
 .nav-cta.active {
   background: linear-gradient(135deg, var(--gold-light), var(--gold)) !important;
-  color: var(--bg-deep) !important;
+  color: var(--text) !important;
 }
 
 .nav-toggle {

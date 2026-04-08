@@ -28,7 +28,7 @@
 }
 
 .schedule-time {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: sans-serif;
   font-size: 1.05rem;
   color: var(--gold);
   min-width: 80px;

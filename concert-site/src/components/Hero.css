@@ -8,11 +8,7 @@
   padding: 80px 20px;
   text-align: center;
 
-  /* Radial spotlight */
-  background:
-    radial-gradient(ellipse 70% 60% at 50% 40%, rgba(201,168,76,0.08) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 40% at 50% 80%, rgba(232,64,96,0.06) 0%, transparent 60%),
-    var(--bg-deep);
+  background: var(--bg-deep);
 }
 
 /* Decorative concentric rings */
@@ -52,10 +48,7 @@
 
 .hero-title--accent {
   font-weight: 700;
-  background: linear-gradient(135deg, var(--gold-light), var(--gold));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text);
 }
 
 .hero-artist {
@@ -91,8 +84,8 @@
   display: inline-block;
   padding: 14px 36px;
   background: linear-gradient(135deg, var(--gold), #a0752e);
-  color: var(--bg-deep) !important;
-  font-family: 'DM Sans', sans-serif;
+  color: var(--text) !important;
+  font-family: sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   letter-spacing: 0.1em;

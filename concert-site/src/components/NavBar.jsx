@@ -7,7 +7,7 @@ export default function NavBar() {
     <Navbar expand="md" className="site-navbar" fixed="top">
       <Container fluid="lg">
         <NavLink to="/" className="brand navbar-brand">
-          <span className="brand-icon">♪</span> Luna Voss
+          Miku
         </NavLink>
         <Navbar.Toggle className="nav-toggle" aria-controls="main-nav" />
         <Navbar.Collapse id="main-nav">

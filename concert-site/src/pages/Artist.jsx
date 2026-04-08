@@ -18,7 +18,7 @@ export default function Artist() {
           <p style={{ fontSize: '0.78rem', letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '20px' }}>
             Headlining Artist
           </p>
-          <h1 className="artist-name">Luna Voss</h1>
+          <h1 className="artist-name">Miku</h1>
           <p className="artist-tagline">"Music is the only language that needs no translation."</p>
         </div>
       </header>
@@ -27,12 +27,12 @@ export default function Artist() {
         <div className="artist-section__inner">
           <div className="artist-bio-grid">
             <div className="artist-avatar">
-              <div className="avatar-placeholder">LV</div>
+              <div className="avatar-placeholder">M</div>
             </div>
             <div className="artist-bio-text">
-              <h2>About Luna</h2>
+              <h2>About Miku</h2>
               <p>
-                Luna Voss is a multi-platinum recording artist known for blending cinematic pop with
+                Miku is a multi-platinum recording artist known for blending cinematic pop with
                 introspective lyricism. Born in Portland, Oregon, she began writing songs at age 14
                 and released her debut EP independently before signing with Atlantic Records in 2019.
               </p>
@@ -72,7 +72,7 @@ export default function Artist() {
       </section>
 
       <div className="artist-cta">
-        <h2>See Luna Live</h2>
+        <h2>See Miku Live</h2>
         <p>August 15, 2026 · Madison Square Garden, New York</p>
         <Link to="/tickets" className="btn-primary-gold">Get Tickets</Link>
       </div>

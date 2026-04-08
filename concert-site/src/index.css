@@ -1,12 +1,12 @@
 :root {
-  --gold:      #c9a84c;
-  --gold-light:#e8c96a;
+  --gold:      #f0ece4;
+  --gold-light:#f0ece4;
   --bg-deep:   #080a0f;
   --bg-card:   rgba(255, 255, 255, 0.04);
   --border:    rgba(255, 255, 255, 0.09);
   --text:      #f0ece4;
-  --muted:     #8a8278;
-  --rose:      #e84060;
+  --muted:     #f0ece4;
+  --rose:      #f0ece4;
   --radius:    12px;
 }
 
@@ -18,7 +18,7 @@ body {
   margin: 0;
   background: var(--bg-deep);
   color: var(--text);
-  font-family: 'DM Sans', system-ui, sans-serif;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: sans-serif;
   color: var(--text);
   margin: 0 0 16px;
 }
