@@ -25,6 +25,12 @@ export default function NavBar() {
               Artist
             </NavLink>
             <NavLink
+              to="/setlist"
+              className={({ isActive }) => 'nav-item-link' + (isActive ? ' active' : '')}
+            >
+              Setlist
+            </NavLink>
+            <NavLink
               to="/tickets"
               className={({ isActive }) => 'nav-item-link nav-cta' + (isActive ? ' active' : '')}
             >

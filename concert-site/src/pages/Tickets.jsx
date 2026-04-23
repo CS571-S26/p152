@@ -68,7 +68,7 @@ export default function Tickets() {
     <div className="tickets-page">
       <header className="tickets-header">
         <h1>Get Your Tickets</h1>
-        <p style={{ color: '#000' }}>
+        <p>
           August 15, 2026 · Madison Square Garden, New York
         </p>
       </header>

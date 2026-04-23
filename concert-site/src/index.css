@@ -1,12 +1,15 @@
 :root {
-  --gold:      #f0ece4;
-  --gold-light:#f0ece4;
-  --bg-deep:   #080a0f;
-  --bg-card:   rgba(255, 255, 255, 0.04);
-  --border:    rgba(255, 255, 255, 0.09);
-  --text:      #f0ece4;
-  --muted:     #f0ece4;
-  --rose:      #f0ece4;
+  --miku:      #39c5bb;
+  --miku-dark: #2aaa9f;
+  --miku-pink: #ff6eb4;
+  --miku-pink-dark: #e05aa0;
+  --miku-glow: rgba(57, 197, 187, 0.28);
+  --pink-glow: rgba(255, 110, 180, 0.28);
+  --bg-deep:   #060d0d;
+  --bg-card:   rgba(57, 197, 187, 0.05);
+  --border:    rgba(57, 197, 187, 0.18);
+  --text:      #e8f6f5;
+  --muted:     #7ec8c5;
   --radius:    12px;
 }
 *, *::before, *::after { box-sizing: border-box; }

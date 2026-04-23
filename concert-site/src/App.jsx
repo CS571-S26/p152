@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Artist from './pages/Artist';
 import Tickets from './pages/Tickets';
+import Setlist from './pages/Setlist';
 function App() {
   return (
     <HashRouter>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/artist" element={<Artist />} />
           <Route path="/tickets" element={<Tickets />} />
+          <Route path="/setlist" element={<Setlist />} />
         </Routes>
         <Footer />
       </div>

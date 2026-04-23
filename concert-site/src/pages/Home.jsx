@@ -42,9 +42,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="home-section home-section--dark">
+      <section className="home-section home-section--dark faq-section">
         <div className="home-section__inner">
-          <h2>Frequently Asked Questions</h2>
+          <h2 className="faq-heading">Frequently Asked Questions</h2>
           <div className="faq-grid">
             {faqs.map(faq => (
               <div key={faq.q} className="faq-card">

@@ -1,14 +1,25 @@
 .tickets-page {
   min-height: 100vh;
   padding-bottom: 80px;
+  background: var(--bg-deep);
 }
 /* page header */
 .tickets-header {
   padding: 90px 20px 50px;
   text-align: center;
-  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(201,168,76,0.07), transparent 70%);
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(255,110,180,0.07), transparent 70%);
   border-bottom: 1px solid var(--border);
   margin-bottom: 60px;
+}
+.tickets-header h1 {
+  background: linear-gradient(to bottom, #86e8e3, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+}
+.tickets-header p {
+  color: var(--muted);
 }
 /* tier cards */
 .tickets-tiers {
@@ -22,26 +33,30 @@
   justify-content: center;
   margin-top: 48px;
   padding: 0 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .submit-btn {
   width: 100%;
   padding: 16px;
-  background: #add8e6;
-  color: black;
+  background: linear-gradient(135deg, var(--miku), var(--miku-pink));
+  color: #060d0d;
   font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.92rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 0 28px rgba(201,168,76,0.2);
+  transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
+  box-shadow: 0 0 28px var(--miku-glow);
 }
 .submit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 44px rgba(201,168,76,0.35);
+  box-shadow: 0 0 44px var(--miku-glow);
+  opacity: 0.9;
 }
 /* confirmation screen */
 .confirm-box {
@@ -53,31 +68,21 @@
   border-radius: 20px;
   text-align: center;
 }
-.confirm-icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold), #a0752e);
-  color: var(--text);
-  font-size: 1.8rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 24px;
-  box-shadow: 0 0 40px rgba(201,168,76,0.3);
-}
 .confirm-box h2 {
   font-size: 2.8rem;
   font-weight: 300;
   margin-bottom: 4px;
-  color: black;
+  background: linear-gradient(135deg, var(--miku), var(--miku-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
 }
 .confirm-sub {
   font-size: 0.78rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: black;
+  color: var(--muted);
   margin-bottom: 32px;
 }
 .confirm-details {
@@ -95,42 +100,35 @@
   justify-content: space-between;
   align-items: center;
   padding: 13px 18px;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid var(--border);
   font-size: 0.88rem;
 }
-.confirm-row span { color: black; }
-.confirm-row strong { color: black; font-weight: 400; }
+.confirm-row span { color: var(--muted); }
+.confirm-row strong { color: var(--miku); font-weight: 400; }
 .confirm-row--total {
-  background: rgba(201,168,76,0.06);
+  background: rgba(57, 197, 187, 0.05);
   border-bottom: none;
 }
-.confirm-row--total span  { color: black; font-weight: 500; }
+.confirm-row--total span { color: var(--miku); font-weight: 500; }
 .confirm-row--total strong {
-  font-family: sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
-  color: black;
-}
-.confirm-note {
-  color: black;
-  font-size: 0.85rem;
-  line-height: 1.7;
-  margin-bottom: 28px;
+  color: var(--miku-pink);
 }
 .btn-reset {
   background: transparent;
   border: 1px solid var(--border);
-  color: #000000;
+  color: var(--muted);
   font-family: sans-serif;
   font-size: 0.82rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 11px 28px;
-  border-radius: 8px;
+  border-radius: 50px;
   cursor: pointer;
   transition: border-color 0.2s, color 0.2s;
 }
 .btn-reset:hover {
-  border-color: var(--gold);
-  color: var(--gold);
+  border-color: var(--miku);
+  color: var(--miku);
 }

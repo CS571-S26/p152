@@ -1,5 +1,5 @@
 .site-navbar {
-  background: rgba(8, 10, 15, 0.85) !important;
+  background: rgba(6, 13, 13, 0.88) !important;
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border);
   padding: 14px 0;
@@ -8,14 +8,13 @@
 .brand {
   font-family: sans-serif !important;
   font-size: 1.4rem !important;
-  font-weight: 600 !important;
-  color: var(--gold) !important;
+  font-weight: 700 !important;
+  background: linear-gradient(135deg, var(--miku), var(--miku-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   letter-spacing: 0.05em;
   text-decoration: none;
-}
-.brand-icon {
-  margin-right: 6px;
-  opacity: 0.8;
 }
 .nav-item-link {
   color: var(--muted) !important;
@@ -29,28 +28,29 @@
 }
 .nav-item-link:hover,
 .nav-item-link.active {
-  color: var(--text) !important;
-  background: rgba(255,255,255,0.06);
+  color: var(--miku) !important;
+  background: rgba(57, 197, 187, 0.08);
 }
 .nav-cta {
-  background: #0057ff !important;
-  color: #fff !important;
-  font-weight: 500 !important;
+  background: linear-gradient(135deg, var(--miku), var(--miku-pink)) !important;
+  color: #060d0d !important;
+  font-weight: 600 !important;
   margin-left: 8px;
+  border-radius: 50px !important;
 }
 .nav-cta:hover {
-  background: #0046cc !important;
-  color: #fff !important;
+  opacity: 0.88;
+  color: #060d0d !important;
+  background: linear-gradient(135deg, var(--miku), var(--miku-pink)) !important;
 }
 .nav-cta.active {
-  background: #0046cc !important;
-  color: #fff !important;
+  opacity: 0.88;
+  color: #060d0d !important;
 }
 .nav-toggle {
   border: 1px solid var(--border) !important;
   filter: invert(1);
 }
-/* fix bootstrap collapse on mobile */
 @media (max-width: 767px) {
   .nav-item-link { margin: 4px 0; }
   .nav-cta { margin-left: 0 !important; }
