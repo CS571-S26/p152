@@ -1,0 +1,96 @@
+.confirmation-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 0%, rgba(57,197,187,0.08), transparent 70%),
+    var(--bg-deep);
+}
+
+.confirmation-box {
+  width: 100%;
+  max-width: 480px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 56px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.confirmation-check {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--miku), var(--miku-pink));
+  color: #060d0d;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 0 32px var(--miku-glow);
+}
+
+.confirmation-box h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  background: linear-gradient(135deg, var(--miku), var(--miku-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.confirmation-sub {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+.confirmation-order-num {
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--miku);
+  background: rgba(57, 197, 187, 0.08);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 8px 20px;
+  margin-bottom: 28px;
+}
+
+.confirmation-event {
+  background: rgba(57, 197, 187, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 28px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.confirmation-event-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.confirmation-event-detail {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.confirmation-email {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 32px;
+  font-style: italic;
+}

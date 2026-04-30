@@ -5,6 +5,13 @@
   border-bottom: 1px solid var(--border);
 }
 .artist-hero__inner { max-width: 600px; margin: 0 auto; }
+.artist-eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--miku-pink);
+  margin-bottom: 20px;
+}
 .artist-name {
   font-size: clamp(3rem, 9vw, 5.5rem);
   font-weight: 300;
@@ -54,12 +61,9 @@
   font-size: 0.95rem;
   line-height: 1.8;
 }
-.artist-section--alt .artist-section__inner > h2 {
-  background: linear-gradient(135deg, var(--miku), var(--miku-pink));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  display: inline-block;
+.artist-section--alt h2 {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 /* songs list */
 .songs-list {

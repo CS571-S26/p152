@@ -22,15 +22,22 @@ export default function CountdownTimer({ targetDate }) {
     { value: time.minutes, label: 'Min' },
     { value: time.seconds, label: 'Sec' },
   ];
+  const ariaLabel = `${time.days} days, ${time.hours} hours, ${time.minutes} minutes, ${time.seconds} seconds until the concert`;
+
   return (
-    <div className="countdown">
+    <div
+      className="countdown"
+      role="timer"
+      aria-label={ariaLabel}
+      aria-live="off"
+    >
       {units.map((u, i) => (
         <Fragment key={u.label}>
-          <div className="countdown-unit">
+          <div className="countdown-unit" aria-hidden="true">
             <span className="countdown-value">{String(u.value).padStart(2, '0')}</span>
             <span className="countdown-label">{u.label}</span>
           </div>
-          {i < units.length - 1 && <span className="countdown-sep">:</span>}
+          {i < units.length - 1 && <span className="countdown-sep" aria-hidden="true">:</span>}
         </Fragment>
       ))}
     </div>

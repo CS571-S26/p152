@@ -53,7 +53,7 @@ export default function Setlist() {
   const topSong = ALL_SONGS.reduce((top, s) => votes[s.id] > votes[top.id] ? s : top, ALL_SONGS[0]);
 
   return (
-    <div className="setlist-page">
+    <main className="setlist-page">
       <header className="setlist-header">
         <p className="setlist-eyebrow">Fan Vote</p>
         <h1>Build the Setlist</h1>
@@ -117,6 +117,6 @@ export default function Setlist() {
           </div>
         )}
       </Container>
-    </div>
+    </main>
   );
 }

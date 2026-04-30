@@ -29,7 +29,7 @@
   min-width: 0;
 }
 .svcard-title {
-  color: #2979ff;
+  color: var(--miku);
   font-weight: 500;
   font-size: 0.97rem;
   white-space: nowrap;
@@ -37,7 +37,7 @@
   text-overflow: ellipsis;
 }
 .svcard-meta {
-  color: #4fa8a5;
+  color: var(--muted);
   font-size: 0.78rem;
 }
 .svcard-right {
@@ -48,7 +48,7 @@
 }
 .svcard-count {
   font-size: 0.85rem;
-  color: #4fa8a5;
+  color: var(--muted);
   min-width: 28px;
   text-align: right;
 }

@@ -8,7 +8,7 @@ export default function Footer() {
           <span className="footer-logo">Miku</span>
           <p>August 15, 2026 · Madison Square Garden</p>
         </div>
-        <nav className="footer-links">
+        <nav className="footer-links" aria-label="Footer navigation">
           <Link to="/">Home</Link>
           <Link to="/artist">Artist</Link>
           <Link to="/setlist">Setlist</Link>

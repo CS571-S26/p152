@@ -89,7 +89,7 @@
 .btn-ghost {
   display: inline-block;
   padding: 14px 28px;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-btn);
   color: var(--muted) !important;
   font-size: 0.9rem;
   border-radius: 50px;

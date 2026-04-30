@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 import Hero from '../components/Hero';
+import mikuImg from '../assets/miku.png';
 import './Home.css';
 const schedule = [
   { time: '6:00 PM', act: 'Doors Open' },
@@ -26,24 +28,33 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <section className="home-section">
-        <div className="home-section__inner">
-          <h2>Event Schedule</h2>
-          <div className="schedule-list">
-            {schedule.map(item => (
-              <div key={item.time} className="schedule-row">
-                <span className="schedule-time">{item.time}</span>
-                <div className="schedule-divider" />
-                <div className="schedule-info">
-                  <strong>{item.act}</strong>
+      <section className="home-section schedule-section">
+        <div className="schedule-outer">
+          <div className="schedule-left">
+            <h2>Event Schedule</h2>
+            <div className="schedule-list">
+              {schedule.map(item => (
+                <div key={item.time} className="schedule-row">
+                  <span className="schedule-time">{item.time}</span>
+                  <div className="schedule-divider" />
+                  <div className="schedule-info">
+                    <strong>{item.act}</strong>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+          <div className="schedule-right">
+            <img
+              src={mikuImg}
+              alt="Hatsune Miku"
+              className="schedule-miku-img"
+            />
           </div>
         </div>
       </section>
       <section className="home-section home-section--dark faq-section">
-        <div className="home-section__inner">
+        <Container className="home-section__inner">
           <h2 className="faq-heading">Frequently Asked Questions</h2>
           <div className="faq-grid">
             {faqs.map(faq => (
@@ -53,7 +64,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
       <section className="cta-band">
         <p className="cta-eyebrow">Limited Availability</p>

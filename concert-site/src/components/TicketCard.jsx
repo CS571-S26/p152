@@ -11,10 +11,22 @@ export default function TicketCard({ id, tier, price, perks, count, onAdd, onRem
           </li>
         ))}
       </ul>
-      <div className="ticket-qty">
-        <button className="qty-btn" onClick={onRemove}>−</button>
-        <span className="qty-count">{count}</span>
-        <button className="qty-btn" onClick={onAdd}>+</button>
+      <div className="ticket-qty" role="group" aria-label={`${tier} ticket quantity`}>
+        <button
+          className="qty-btn"
+          onClick={onRemove}
+          aria-label={`Remove one ${tier} ticket`}
+        >
+          −
+        </button>
+        <span className="qty-count" aria-live="polite" aria-atomic="true">{count}</span>
+        <button
+          className="qty-btn"
+          onClick={onAdd}
+          aria-label={`Add one ${tier} ticket`}
+        >
+          +
+        </button>
       </div>
     </div>
   );

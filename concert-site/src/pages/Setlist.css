@@ -60,10 +60,10 @@
   align-items: center;
   gap: 6px;
   padding: 8px 18px;
-  border: 1px solid rgba(57, 197, 187, 0.38);
+  border: 1px solid var(--border-btn);
   border-radius: 50px;
   background: transparent;
-  color: #4fa8a5;
+  color: var(--muted);
   font-size: 0.83rem;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -111,7 +111,7 @@
 .voted-summary strong { color: var(--miku-pink); }
 .clear-btn {
   background: transparent;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-btn);
   color: var(--muted);
   font-size: 0.8rem;
   letter-spacing: 0.08em;

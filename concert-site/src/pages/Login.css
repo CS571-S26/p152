@@ -1,0 +1,130 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background:
+    url('https://images.squarespace-cdn.com/content/v1/57825361440243db4a4b7830/1655346565115-IZRITMCG2WH8RF5F19V6/download+%2879%29.jpg?format=2500w')
+    center center / cover no-repeat;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(6, 13, 13, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(57, 197, 187, 0.35);
+  border-radius: 20px;
+  padding: 48px 40px;
+  text-align: center;
+}
+
+.login-box h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  background: linear-gradient(135deg, var(--miku), var(--miku-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.login-sub {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 32px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.form-field input {
+  background: rgba(57, 197, 187, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 14px;
+  color: var(--text);
+  font-size: 0.92rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-field input:focus {
+  border-color: var(--miku);
+}
+
+.form-field input::placeholder {
+  color: rgba(126, 200, 197, 0.4);
+}
+
+.login-error {
+  color: var(--miku-pink);
+  font-size: 0.82rem;
+  margin: 0;
+  text-align: center;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, var(--miku), var(--miku-pink));
+  color: #060d0d;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.login-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.login-switch {
+  margin-top: 24px;
+  font-size: 0.84rem;
+  color: var(--muted);
+}
+
+.switch-btn {
+  background: none;
+  border: none;
+  color: var(--miku);
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.switch-btn:hover {
+  color: var(--miku-pink);
+}

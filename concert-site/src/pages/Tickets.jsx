@@ -1,7 +1,10 @@
-import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 import TicketCard from '../components/TicketCard';
+import { useAuth } from '../context/AuthContext';
+import { useCart } from '../context/CartContext';
 import './Tickets.css';
+
 const TIERS = [
   {
     id: 'normal',
@@ -27,72 +30,62 @@ const TIERS = [
     ],
   },
 ];
+
 export default function Tickets() {
-  const [quantities, setQuantities] = useState({ normal: 0, vip: 0 });
-  const [confirmed, setConfirmed] = useState(false);
-  const totalTickets = TIERS.reduce((sum, t) => sum + quantities[t.id], 0);
-  const total = TIERS.reduce((sum, t) => sum + t.price * quantities[t.id], 0);
-  function add(id) {
-    setQuantities(q => ({ ...q, [id]: q[id] + 1 }));
+  const { user } = useAuth();
+  const { cart, addToCart, removeFromCart, totalItems } = useCart();
+  const navigate = useNavigate();
+
+  function handleAdd(id) {
+    if (!user) {
+      navigate('/login');
+      return;
+    }
+    addToCart(id);
   }
-  function remove(id) {
-    setQuantities(q => ({ ...q, [id]: Math.max(0, q[id] - 1) }));
+
+  function handleRemove(id) {
+    if (!user) return;
+    removeFromCart(id);
   }
-  function handleReset() {
-    setConfirmed(false);
-    setQuantities({ normal: 0, vip: 0 });
-  }
-  if (confirmed) {
-    return (
-      <div className="tickets-page">
-        <div className="confirm-box">
-          <h2>Order Summary</h2>
-          <div className="confirm-details">
-            {TIERS.filter(t => quantities[t.id] > 0).map(t => (
-              <div key={t.id} className="confirm-row">
-                <span>{t.tier} × {quantities[t.id]}</span>
-                <strong>${t.price * quantities[t.id]}</strong>
-              </div>
-            ))}
-            <div className="confirm-row confirm-row--total">
-              <span>Total</span>
-              <strong>${total}</strong>
-            </div>
-          </div>
-          <button className="btn-reset" onClick={handleReset}>Start Over</button>
-        </div>
-      </div>
-    );
-  }
+
   return (
-    <div className="tickets-page">
+    <main className="tickets-page">
       <header className="tickets-header">
         <h1>Get Your Tickets</h1>
-        <p>
-          August 15, 2026 · Madison Square Garden, New York
-        </p>
+        <p>August 15, 2026 · Madison Square Garden, New York</p>
+        {!user && (
+          <p className="tickets-login-hint">
+            <button className="tickets-login-link" onClick={() => navigate('/login')}>
+              Sign in
+            </button>{' '}
+            to save tickets to your cart
+          </p>
+        )}
       </header>
+
       <div className="tickets-tiers">
         <Row className="g-4 justify-content-center">
           {TIERS.map(t => (
             <Col key={t.id} xs={12} md={5}>
               <TicketCard
                 {...t}
-                count={quantities[t.id]}
-                onAdd={() => add(t.id)}
-                onRemove={() => remove(t.id)}
+                count={user ? cart[t.id] : 0}
+                onAdd={() => handleAdd(t.id)}
+                onRemove={() => handleRemove(t.id)}
               />
             </Col>
           ))}
         </Row>
       </div>
-      {totalTickets > 0 && (
+
+      {user && totalItems > 0 && (
         <div className="proceed-wrap">
-          <button className="submit-btn" onClick={() => setConfirmed(true)}>
-            Proceed to Checkout
+          <button className="submit-btn" onClick={() => navigate('/cart')}>
+            View Cart ({totalItems} {totalItems === 1 ? 'item' : 'items'})
           </button>
         </div>
       )}
-    </div>
+    </main>
   );
 }

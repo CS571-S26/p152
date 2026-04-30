@@ -1,7 +1,19 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import { useAuth } from '../context/AuthContext';
+import { useCart } from '../context/CartContext';
 import './NavBar.css';
+
 export default function NavBar() {
+  const { user, logout } = useAuth();
+  const { totalItems } = useCart();
+  const navigate = useNavigate();
+
+  function handleLogout() {
+    logout();
+    navigate('/');
+  }
+
   return (
     <Navbar expand="md" className="site-navbar" fixed="top">
       <Container fluid="lg">
@@ -36,6 +48,33 @@ export default function NavBar() {
             >
               Get Tickets
             </NavLink>
+
+            <NavLink
+              to="/cart"
+              className={({ isActive }) => 'nav-item-link nav-cart' + (isActive ? ' active' : '')}
+              aria-label="Cart"
+            >
+              <span className="cart-icon">🛒</span>
+              {user && totalItems > 0 && (
+                <span className="cart-badge">{totalItems}</span>
+              )}
+            </NavLink>
+
+            {user ? (
+              <div className="nav-user">
+                <span className="nav-username">{user}</span>
+                <button className="nav-logout-btn" onClick={handleLogout}>
+                  Sign Out
+                </button>
+              </div>
+            ) : (
+              <NavLink
+                to="/login"
+                className={({ isActive }) => 'nav-item-link nav-login' + (isActive ? ' active' : '')}
+              >
+                Sign In
+              </NavLink>
+            )}
           </Nav>
         </Navbar.Collapse>
       </Container>

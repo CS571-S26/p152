@@ -14,9 +14,9 @@ export default function Hero() {
         </h1>
         <div className="hero-meta">
           <span>August 15, 2026</span>
-          <span className="dot">·</span>
+          <span className="dot" aria-hidden="true">·</span>
           <span>8:00 PM</span>
-          <span className="dot">·</span>
+          <span className="dot" aria-hidden="true">·</span>
           <span>Madison Square Garden, New York</span>
         </div>
         <CountdownTimer targetDate={CONCERT_DATE} />
